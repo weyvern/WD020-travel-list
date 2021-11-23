@@ -5,6 +5,6 @@ const usersRouter = Router();
 
 usersRouter.route('/').get(getAllUsers).post(createUser);
 
-usersRouter.route('/:code').get(getSingleUser).put(updateUser).delete(deleteUser);
+usersRouter.route('/:id').get(getSingleUser).put(updateUser).delete(deleteUser);
 
 export default usersRouter;
